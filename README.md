@@ -1,5 +1,10 @@
 # The Science of Well-Being: Rewirement Workbook
 
+## 🔗 Try It Live
+
+**Access the full interactive workbook directly in your browser:**
+👉 [**https://ali-nasser-08.github.io/rewirement-homework/rewirement-v4**](https://ali-nasser-08.github.io/rewirement-homework/rewirement-v4)
+
 A modern, aesthetic, and privacy-focused digital tracker based on the [Yale University "The Science of Well-Being"](https://www.coursera.org/learn/the-science-of-well-being) course on Coursera.
 
 **Note:** While this tool serves as a perfect companion for students taking the course, it is designed to be **completely standalone**. You do not need to be enrolled in the course to use this workbook effectively for tracking your happiness habits and personal growth.
