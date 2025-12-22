@@ -6,16 +6,13 @@
     <meta name="theme-color" content="#0f172a">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>The Science of Well-Being: Rewirement Workbook</title>
+    <title>The Rewirement Workbook</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     
-    <!-- Babel for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
@@ -347,34 +344,44 @@
         const NOTES = {
             week1: [
                 {
-                    title: "Measuring Happiness",
-                    icon: IconActivity,
-                    content: "To establish a baseline, measure your happiness using a validated scale. If you don't have access to the PERMA Profiler, use a simple self-assessment:\n\n**On a scale of 1-5, how happy are you with your life right now?**\n\nThe goal is to have a concrete 'before' number to compare with your 'after' result in Week 10."
+                    title: "The G.I. Joe Fallacy",
+                    icon: IconZap,
+                    content: "We often think that \"knowing\" what makes us happy is enough to change our behavior. This is false. \n\n**The G.I. Joe Fallacy** is the mistaken idea that \"Knowing is half the battle.\" In reality, knowing is just the first step; habitual practice is the other 90%."
                 },
                 {
-                    title: "The PERMA Model",
-                    icon: IconTarget,
-                    content: "Happiness isn't just one thing. It's often broken down into 5 pillars (PERMA):\n\n**P**ositive Emotions (joy, gratitude)\n**E**ngagement (flow, losing track of time)\n**R**elationships (connection, support)\n**M**eaning (purpose, serving something bigger)\n**A**ccomplishment (goals, mastery)"
+                    title: "The 40% Solution",
+                    icon: IconActivity,
+                    content: "Sonja Lyubomirsky's research suggests our happiness is determined by:\n• **50% Genes** (Fixed setpoint)\n• **10% Circumstances** (Money, status, etc.)\n• **40% Intentional Actions** (Habits, mindset)\n\nThis workbook focuses on that 40% you can control."
                 },
                 {
                     title: "Signature Strengths",
-                    icon: IconZap,
+                    icon: IconTarget,
                     content: "Your 'Signature Strengths' are the character traits that feel most essential to who you are (e.g., curiosity, kindness, bravery).\n\n**The Challenge:** Identify your top 4 strengths and use one of them in a **new way** every day for 7 days. This builds confidence and flow."
                 }
             ],
             week2: [
                 {
-                    title: "Savoring",
-                    icon: IconSun,
-                    content: "Savoring is the act of stepping outside of an experience to review and appreciate it. It forces you to slow down and locks in the memory.\n\n**Techniques:**\n• **Share it:** Tell someone else about the moment.\n• **Memory Building:** Take a mental (or physical) photo.\n• **Self-Congratulation:** Remind yourself how lucky you are.\n• **Sharpen Perception:** Focus on specific sensory details (smell, sound)."
+                    title: "Hedonic Adaptation",
+                    icon: IconMoon,
+                    content: "Also known as **Annoying Feature #3**: Our minds are built to get used to stuff. The new car or promotion feels amazing for a moment, but we quickly adapt and return to our baseline.\n\nWe need strategies like **Savoring** to stop this adaptation process."
                 },
                 {
-                    title: "Daily Gratitude Journal",
-                    icon: IconBookOpen,
-                    content: "Gratitude rewires your brain to scan for the positive.\n\n**The Challenge:** Every night, write down **5 things** you are grateful for. They can be huge (promotion) or tiny (good coffee).\n\n**Key:** Don't just list them. Relive the feeling of *why* you are grateful as you write."
+                    title: "Savoring",
+                    icon: IconSun,
+                    content: "Savoring is the act of stepping outside of an experience to review and appreciate it. It forces you to slow down and locks in the memory.\n\n**Techniques:**\n• **Share it:** Tell someone else about the moment.\n• **Memory Building:** Take a mental (or physical) photo.\n• **Self-Congratulation:** Remind yourself how lucky you are."
+                },
+                {
+                    title: "Experiences > Stuff",
+                    icon: IconDatabase,
+                    content: "Research shows that investing in **experiences** (trips, concerts, meals) makes us happier than investing in material possessions. Experiences become part of our identity and we don't adapt to them as quickly as we do to physical objects."
                 }
             ],
             week3: [
+                {
+                    title: "Overcoming Miswanting",
+                    icon: IconZap,
+                    content: "Our minds have strong intuitions about what will make us happy (money, grades, status), but these are often wrong. This is called **Miswanting**.\n\n**Kindness** and **Connection** are the real drivers of well-being, even though our brain doesn't always crave them instinctively."
+                },
                 {
                     title: "Random Acts of Kindness",
                     icon: IconHeart,
@@ -383,43 +390,43 @@
                 {
                     title: "Social Connection",
                     icon: IconUsers,
-                    content: "Social connection is the strongest predictor of happiness. Even brief interactions with strangers matter.\n\n**The Challenge:** Make one new connection per day (chat with a barista, talk to someone on the bus).\n\n**Deepen:** Once this week, spend a solid hour connecting with someone you care about deeply."
+                    content: "Social connection is the strongest predictor of happiness. Even brief interactions with strangers matter.\n\n**The Challenge:** Make one new connection per day (chat with a barista, talk to someone on the bus)."
                 }
             ],
             week4: [
                 {
-                    title: "Exercise",
+                    title: "Healthy Habits",
                     icon: IconActivity,
-                    content: "Exercise is not just for the body; it's a potent antidepressant.\n\n**The Goal:** Move your body for at least **30 minutes** a day.\n\n**What counts?** Anything. Walking, yoga, dancing in your room, gym. Just get your heart rate up and notice the mood boost afterwards."
-                },
-                {
-                    title: "Sleep Hygiene",
-                    icon: IconMoon,
-                    content: "Sleep deprivations kills mood and cognitive function.\n\n**The Goal:** Get at least **7 hours** of sleep for 4 nights this week.\n\n**How:**\n• No screens 30 mins before bed.\n• No caffeine after 2 PM.\n• Make your room dark and cool."
+                    content: "Your physical state dictates your mental state. Exercise is a potent antidepressant, and sleep deprivation kills cognitive function and mood.\n\n**The Goal:**\n• **Exercise:** 30 mins/day of movement.\n• **Sleep:** 7+ hours/night for at least 4 nights."
                 }
             ],
             week5: [
                 {
                     title: "Meditation",
                     icon: IconSun,
-                    content: "Meditation builds the muscle of attention, allowing you to get off the 'hedonic treadmill' of constant wanting.\n\n**The Goal:** Meditate for **10 minutes** every day.\n\n**How:** Focus on your breath. When your mind wanders (and it will), gently bring it back. That 'bringing back' is the rep."
+                    content: "Meditation builds the muscle of attention, allowing you to get off the 'hedonic treadmill' of constant wanting. It stops the mind from wandering, which is a key source of unhappiness."
                 },
                 {
                     title: "Gratitude Letter",
                     icon: IconHeart,
-                    content: "This is a 'nuclear' happiness boost. Write a letter (300+ words) to someone who changed your life but whom you never properly thanked.\n\n**The Visit:** Ideally, meet them in person or call them, and read the letter *out loud* to them. It creates a powerful shared moment."
+                    content: "This is a 'nuclear' happiness boost. Write a letter (300+ words) to someone who changed your life but whom you never properly thanked.\n\n**The Visit:** Ideally, meet them in person or call them, and read the letter *out loud* to them."
                 }
             ],
             final: [
                 {
-                    title: "The Final Challenge",
+                    title: "Growth Mindset",
                     icon: IconTarget,
-                    content: "You've sampled the buffet of habits. Now pick **ONE** to master.\n\n**The Commitment:** Practice your chosen rewirement (e.g., meditation, savoring) for 4 weeks straight. This is about neuroplasticity—rewiring your brain for the long term."
+                    content: "Carol Dweck's research shows that believing intelligence and talent can be developed (Growth Mindset) leads to better resilience than believing they are fixed traits.\n\n**Apply it:** View your rewirement failures not as a sign you can't change, but as data points to learn from."
                 },
                 {
                     title: "WOOP Your Goal",
                     icon: IconZap,
-                    content: "Use the WOOP method to stick to your plan:\n\n**W**ish: What do you want?\n**O**utcome: How will it feel?\n**O**bstacle: What inner thought stops you?\n**P**lan: If [obstacle], then I will [action]."
+                    content: "Positive thinking alone isn't enough. Use the WOOP method to visualize obstacles:\n\n**W**ish: What do you want? (e.g., Daily meditation)\n**O**utcome: How will it feel? (Calm, focused)\n**O**bstacle: What inner thought stops you? (I'm too tired)\n**P**lan: IF [obstacle], THEN I will [action]."
+                },
+                {
+                    title: "Goal Specificity",
+                    icon: IconCheckCircle,
+                    content: "Quantitative precision matters. Don't just say 'Exercise more.' Say 'Do 30 minutes of Yoga at 7 PM on Mon/Wed/Fri.' Specific goals are far more likely to be achieved."
                 }
             ]
         };
@@ -931,7 +938,8 @@
                                     <h1 className={`text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r ${theme.accent} tracking-tight`}>
                                         Rewirement
                                     </h1>
-                                    <p className={`${theme.mutedText} mt-2 text-lg`}>Yale "The Science of Well-Being" Tracker</p>
+                                    <p className={`${theme.mutedText} mt-2 text-lg`}>Personal Well-Being & Habit Tracker</p>
+                                    <p className={`${theme.mutedText} mt-1 text-xs opacity-60 uppercase tracking-wide`}>Based on the Yale University course 'The Science of Well-Being'</p>
                                 </div>
                                 <div className="flex gap-2 self-end">
                                      <div className="relative">
