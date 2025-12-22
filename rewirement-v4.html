@@ -346,18 +346,55 @@
 
         // --- SELF-CONTAINED NOTES DATA ---
         const NOTES = {
-            week1: [
+            baseline: [
                 {
                     title: "Measuring Happiness",
                     icon: IconActivity,
                     content: "To establish a baseline, you need to measure your current happiness using a validated scale. This gives you a concrete data point to compare against later.\n\n**Action:** Take the PERMA Profiler survey. It takes about 2-3 minutes.\n\n[Click here to take the survey](https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_dmWAB2LoFzOk25n)\n\n*(Note your scores in the tracker after you finish)*"
                 }
             ],
+            week1: [
+                {
+                    title: "Discover Your Signature Strengths",
+                    icon: IconTarget,
+                    content: "Before you can use your strengths, you need to identify them. The VIA Institute provides a scientifically validated survey to help you discover your top character strengths.\n\n**Action:** Take the free VIA Survey to find your top 5 strengths.\n\n[Take the VIA Survey](https://www.viacharacter.org/)\n\n*(Once you have your results, list your top 4 in the tracker below)*"
+                },
+                {
+                    title: "The G.I. Joe Fallacy",
+                    icon: IconZap,
+                    content: "We often think that \"knowing\" what makes us happy is enough to change our behavior. This is false. \n\n**The G.I. Joe Fallacy** is the mistaken idea that \"Knowing is half the battle.\" In reality, knowing is just the first step; habitual practice is the other 90%."
+                },
+                {
+                    title: "The 40% Solution",
+                    icon: IconActivity,
+                    content: "Sonja Lyubomirsky's research suggests our happiness is determined by:\n• **50% Genes** (Fixed setpoint)\n• **10% Circumstances** (Money, status, etc.)\n• **40% Intentional Actions** (Habits, mindset)\n\nThis workbook focuses on that 40% you can control."
+                },
+                {
+                    title: "Signature Strengths",
+                    icon: IconTarget,
+                    content: "Your 'Signature Strengths' are the character traits that feel most essential to who you are (e.g., curiosity, kindness, bravery).\n\n**The Challenge:** Identify your top 4 strengths and use one of them in a **new way** every day for 7 days. This builds confidence and flow."
+                }
+            ],
             week2: [
                 {
-                    title: "Hedonic Adaptation",
+                    title: "Annoying Feature #1",
+                    icon: IconZap,
+                    content: "Our minds' strongest intuitions are often totally wrong. We think we know what will make us happy (grades, money, perfect body), but research shows these things have a much smaller impact on our well-being than we expect."
+                },
+                {
+                    title: "Annoying Feature #2",
+                    icon: IconActivity,
+                    content: "Our minds don't think in terms of absolutes; they judge relative to reference points. We compare ourselves to others (social comparison) or to our own past, which distorts our perception of happiness."
+                },
+                {
+                    title: "Annoying Feature #3: Hedonic Adaptation",
                     icon: IconMoon,
-                    content: "Also known as **Annoying Feature #3**: Our minds are built to get used to stuff. The new car or promotion feels amazing for a moment, but we quickly adapt and return to our baseline.\n\nWe need strategies like **Savoring** to stop this adaptation process."
+                    content: "Our minds are built to get used to stuff. The new car or promotion feels amazing for a moment, but we quickly adapt and return to our baseline.\n\nWe need strategies like **Savoring** to stop this adaptation process."
+                },
+                {
+                    title: "Annoying Feature #4",
+                    icon: IconDatabase,
+                    content: "**We don't realize that our minds are built to get used to stuff.** This lack of awareness means we keep chasing the wrong things, expecting them to make us permanently happy, only to be disappointed when the feeling fades."
                 },
                 {
                     title: "Savoring",
@@ -998,12 +1035,12 @@
                             <div className="space-y-4">
                                 <WeekCard 
                                     title="Baseline Measurement" 
-                                    subtitle="Week 1 - Starting Point"
+                                    subtitle="Starting Point"
                                     icon={IconActivity}
                                     isOpen={activeWeek === 1}
                                     onToggle={() => setActiveWeek(activeWeek === 1 ? 0 : 1)}
                                     theme={theme}
-                                    noteKey="week1"
+                                    noteKey="baseline"
                                 >
                                     <div className={`text-sm ${theme.mutedText} mb-4 bg-white/5 p-3 rounded-lg border border-white/10`}>
                                         Measure your happiness before starting. Use the PERMA Profiler or Authentic Happiness Inventory resources from the course, or use the simple 1-5 scale.
@@ -1021,8 +1058,8 @@
                                 </WeekCard>
 
                                 <WeekCard 
-                                    title="Signature Strengths" 
-                                    subtitle="Week 1"
+                                    title="Week 1: Signature Strengths" 
+                                    subtitle="Discovering Your Tools"
                                     icon={IconSun}
                                     isOpen={activeWeek === 2}
                                     onToggle={() => setActiveWeek(activeWeek === 2 ? 0 : 2)}
@@ -1297,4 +1334,3 @@
     </script>
 </body>
 </html>
-
